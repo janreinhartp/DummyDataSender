@@ -69,7 +69,7 @@ void loop() {
     data.massFlowExhaust = random(200, 600) / 10.0; // 20.0 to 60.0
     data.rpm = random(1000, 5000); // 1000 to 5000
     data.gasFlowRate = random(10, 50) / 10.0; // 1.0 to 5.0
-    data.voltage = random(110, 130) / 10.0; // 11.0 to 13.0
+    data.voltage = random(190, 220); // 11.0 to 13.0
     data.ampere = random(50, 150) / 10.0; // 5.0 to 15.0
     data.loadCell = random(1000, 5000) / 10.0; // 100.0 to 500.0
 
@@ -101,5 +101,5 @@ void loop() {
     Serial.print("dateTime: "); Serial.println(data.dateTime);
     Serial.println("---");
 
-    delay(50); // Send every 5 seconds
+    delay(500); // Send every 5 seconds
 }
