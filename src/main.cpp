@@ -101,5 +101,5 @@ void loop() {
     Serial.print("dateTime: "); Serial.println(data.dateTime);
     Serial.println("---");
 
-    delay(500); // Send every 5 seconds
+    delay(800); // Send every 5 seconds
 }
